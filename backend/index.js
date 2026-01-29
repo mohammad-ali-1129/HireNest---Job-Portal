@@ -38,6 +38,9 @@ app.use("/api/v1/job", jobRoute);
 app.use("/api/v1/application", applicationRoute);
 
 
+app.get('/',(req,res)=>{
+    res.send("Server is listening ...  ");
+})
 
 app.listen(PORT,()=>{
     connectDB();
